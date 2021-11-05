@@ -48,4 +48,9 @@
   mergeoptions = --no-edit
 [user]
 	email = marceau.tassin@gmail.com
-	name = marceau tassin
+	name = marceau
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
