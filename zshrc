@@ -126,3 +126,4 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
